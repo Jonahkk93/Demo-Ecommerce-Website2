@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /*box-sizing: border-box;*/
+    font-family: Larke;
+}
+
+
+/*Body not Sidebar*/
+body{
+    /*overflow: hidden;*/
+    color: #fff;
+    margin: 0 0 0 3.2%;
+   /* margin-left:-1%;*/
+}
+
+/*The Sidebar*/
+nav3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 1890px ;              /*2238px*/
+    left: 0;
+    background:#E5A484;
+    width: 42px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgb(0, 0, 0,0.1);
+    
+}
+.logo3{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 -6px;
+}
+
+/*Rockstar Image*/
+.logo3 img{
+    width: 35px;
+    border-radius: 100%;
+    /*margin-left: -14px;*/
+}
+
+/*Rockstar Word*/
+.logo3 samp{
+    font-weight: bold;
+    padding-left: -2px;
+    font-size: 18px;
+    top: 7px;
+    text-transform: uppercase;
+}
+
+/*Home. Profile. wallet. Analystics. settings. Logout. display*/
+c{
+    position: relative;
+    color: white;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+    border-bottom: 1px solid #1b1b1b;
+    
+}
+/*The Icons*/
+.fas{
+    position: relative;
+    width: 25px;
+    top: 2px;
+    font-size: 20px;
+    text-align: center;
+    font-family: Larke;
+    /*border-bottom: 1px solid #999;*/
+}
+
+
+/*The HOME/LOGIN/ABOUT word position*/
+.nav3-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+    top: -3px;
+
+}
+/*The selecting guy*/
+c:hover{
+    
+    padding-bottom: 5%;
+    padding-top: -5%;
+    background: rgb(27, 27, 27);
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%; 
+    
+}
+
+/*sidebar size*/
+nav3:hover{
+    width: 200px;
+    transition: all 0.5s ease;
+}
+/*logout position
+.logout{
+    position: absolute;
+    bottom: 0;
+*/
+
+/*social media*/
+.sidebar_menu .social media{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+/*social media icons*/
+.social_media i{
+    padding: 0 5px;
+    color: #fff;
+    opacity:0.6;
+    font-size: 20px;
+}

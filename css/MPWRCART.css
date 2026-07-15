@@ -1,0 +1,298 @@
+
+/*body{     
+    font-family: Larke;
+    margin: 0;
+}*/
+
+/*.Products{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}*/
+
+/*Shopping Cart Icon*/
+.svg{
+    width: 30px;
+    
+}
+
+/*header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+
+/*The Circle on the cart*/
+header .icon-cart {
+    position: relative;
+}
+
+
+/*Catalog images
+.Products .row img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #000900);
+}
+
+
+/*Space between products
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+*/
+
+/*Box around product
+.Products .row{
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+}
+*/
+
+/*Product Title
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+*/
+
+/*Product Price
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+*/
+
+/*Add to Cart Button
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor:pointer;
+}
+*/
+
+/*CART*/
+/*Shopping Cart Icon*/
+.svg{
+    width: 30px;
+}
+
+/*The Circle on the cart*/
+header .icon-cart {
+    position: relative;
+}
+
+
+/*The Circle on the cart*/
+header .icon-cart span{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: #E5A484;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    cursor: pointer;
+}
+
+/* Cart background*/
+.cartTab {
+    position: fixed;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+
+    color: rgb(5, 5, 5);
+    inset: 0 -350px 0 auto;
+    display: grid;
+    grid-template-rows: 100px 1fr 70px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.726);
+    transition: 0.5s; 
+    z-index: 100;
+    border-left: 1px solid #e9e9e9;
+}
+
+
+/*position of Cart Pull out*/
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+
+
+/*pushes body when cart comes*/
+body.showCart .tb{
+    transform: translateX(-250px);
+}
+
+/*Shopping Cart Title*/
+.cartTab .MyCart{
+    padding: 20px;
+    margin: 0;
+    color: #E5A484;
+    background-color: rgba(231, 231, 231, 0.932);
+    font-size: 38px;
+    font-weight: 600;
+    border-left: 1px solid #f7f7f7; 
+    border-bottom: 2px solid #d4d4d4; 
+
+    
+    
+}
+
+
+/*Cart Buttons*/
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(231, 231, 231, 0.932);
+    border-color: rgb(252, 252, 252);
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #e9e9e9; 
+
+    
+}
+
+
+/*Cart Buttons design*/
+.cartTab .btn button{
+    background-color: #E5A484;
+    border: none;
+    font-size: Larke;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+
+/*Close button in cart*/
+.cartTab .btn .close{
+    background-color: #353432;
+    color: #eeeeee;
+    border-radius: 40px;
+    box-shadow: 0 0 3px rgb(139, 139, 139);
+    
+}
+
+/* When you click close button*/
+.cartTab .btn .close:hover{
+    background-color:#525050 ;
+}
+
+/*Checkout button*/
+.cartTab .btn .checkOut{
+    background-color: #E5A484;
+    font-weight: 600;
+    color: #353432;
+    border-radius: 40px;
+    box-shadow: 0 0 3px rgb(99, 99, 99);
+
+}
+/* When you click Checkout button*/
+.cartTab .btn .checkOut:hover{
+    background-color: #e2ad93;
+}
+
+/*The product images in cart*/
+.cartTab .listCart .Cat-Item img{
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: -6%;
+
+}
+
+
+/*The product details in cart*/
+.cartTab .listCart .Cat-Item{
+    display: grid;
+    grid-template-columns: 70px 95px 100px 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+/*Name in the cart*/
+.cartTab .listCart .Cat-Item .name{
+    font-size: 0.9em;
+    
+}
+
+/*Price in the cart*/
+.cartTab .listCart .totalPrice{
+    font-size: 0.85em;
+    /*font-weight: 600;*/
+    
+   
+}
+
+/*Shape around the arrows in cart*/
+.listCart .quantity span{
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    background-color: #E5A484;
+    color: #fff;
+    border-radius: 1px 30%;
+    cursor: pointer;
+
+    
+}
+
+/*The number of an item in the cart*/
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 0.75em;
+}
+
+
+/*Color bg of every other item in cart*/
+.listCart .Cat-Item:nth-child(even){
+    background-color: rgba(243, 243, 243, 0.932);
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    /*border-left-style: outset;
+    border-width: 2px;
+    border-color: #eee1;*/
+    
+}
+
+
+/*scroll bar for cart*/
+.listCart{
+    overflow: auto;
+}
+
+
+/*hidding scrollbar*/
+.listCart::-webkit-scrollbar{
+    width: 0;
+    
+}
+
+/*
+@media screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

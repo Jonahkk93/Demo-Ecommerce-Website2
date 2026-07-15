@@ -1,0 +1,18 @@
+
+.searchbar{
+    width: 100%;
+    background-color: #eeee;
+    border-radius: 30px;
+    padding: 9px;
+ 
+}
+input{
+    border: none;
+    outline: none;
+
+}
+.glass:hover{
+    color: orangered;
+    cursor: pointer;
+}
+

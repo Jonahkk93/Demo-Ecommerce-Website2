@@ -1,0 +1,112 @@
+*{
+    font-family: Larke;
+
+}
+
+body{
+    background-color: linear-gradient(90deg, #E8D7C7, #FAF2EF);
+}
+.checkoutLayout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px;
+}
+.checkoutLayout .right{
+    background-color: #353432;
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+}
+
+.checkoutLayout .right h1{
+    color: #E5A484;
+}
+
+.checkoutLayout .list img{
+    height: 70px;
+}
+
+.checkoutLayout .right .form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #E5A484;
+    padding-bottom: 20px;
+}
+.checkoutLayout .form .group:nth-child(-n+3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.checkoutLayout .form input,
+.checkoutLayout .form select{
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: rgba(136, 136, 136, 0.342);
+    color: #fff;
+}
+
+.checkoutLayout .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.checkoutLayout .row div:nth-child(2){
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.buttonCheckout{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #E5A484;
+}
+
+.returnCart h1{
+    border-top: 1px solid #eee;
+    padding: 20px 0;
+}
+.returnCart .list .item img{
+    height: 80px;
+}
+
+.returnCart .item{
+    display: grid;
+    grid-template-columns: 80px 1fr 50px 80px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    background: #353432;
+    padding: 0 10px;
+    color: #fff;
+    box-shadow: 0 10px 20px #555;
+    border-radius: 20px;
+}
+
+.returnPrice{
+color: #E5A484;
+}
+
+.name{
+    color: #E5A484;
+}
+
+.return .row .totalPrice{
+    color: #E5A484;
+}
+.returnCart .item .name,
+.returnCart .item .returnPrice{
+    font-size: x-large;
+    font-weight: bold;
+}

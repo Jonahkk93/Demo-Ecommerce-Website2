@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Kahuma Jonah</title>
+        <link rel="stylesheet" href="css/Larke.css">
+        <link rel="stylesheet" href="css/MPWR Navi.css">
+        <link rel="stylesheet" href="css/MPWRSidebar.css">
+        <link rel="stylesheet" href="css/MPWRCatalog.css">
+        <link rel="stylesheet" href="css/MPWRCART.css">
+        <link rel="stylesheet" href="css/MPWRnewscard.css">
+        <link rel="stylesheet" href="css/Reviews.css">
+        <link rel="stylesheet" href="css/MPWRREVIEWS.css">
+        <link rel="stylesheet" href="css/REVIEWSSslider.css">
+        <link rel="stylesheet" href="css/MPWRFooter.css">
+        
+
+
+<div class="tbody">
+    </head>
+        <header>  
+            <!--SIDEBAR-->
+            <div class="main_box">
+                <input type="checkbox" id="check">
+    
+                <div class="btn_one">
+                <label for="check">
+                        <i><img src="images/3Bars.png" width="35px"></i>
+                    </label>
+                </div>
+                <div class="sidebar_menu">
+    
+                    <div class="btn_two">
+                        <label for="check">
+                            <i><img src="images/Close.png" width="15px"></i>
+                        </label>
+                    </div>
+                    <div class="menu2">
+                        <ul>
+                            <li><a href="login.html"><i class="fas"></i>
+                                Login</a></li>
+                            <li><a href="#"><i class="fas"></i>
+                                Feedback</a></li>
+                            <li><a href="#"><i class="fas"></i>
+                                Tutorials</a></li>
+                            <li><a href="#"><i class="fas"></i>
+                                Contact Us</a></li>
+                            <li><a href="#"><i class="fas"></i>
+                                Order Tracking</a></li>
+                            <li><a href="FAQS.html"><i class="fas"></i>
+                                FAQ</a></li>
+                        </ul>
+                    
+            <div class="social_media">
+                <a href=""><i><img src="images/facebook2.png" width="18px"></i></a>
+                <a href=""><i><img src="images/Instagram.png" width="18px"></i></a>
+                <a href=""><i><img src="images/twitter.png" width="18px"></i></a>
+                <a href=""><i><img src="images/linkedin.png" width="18px"></i></a>
+            </div>
+        </div>
+    </div></div>
+
+              <!--NAVIGATION TOP-->
+            <a href="#" class="brand">LOGO</a>
+            <div class="menu-btn"></div>
+
+            <div class="navigation"> 
+                <div class="navigation-items">
+                    <a href="login.html">Login</a>
+                    <!--<a class="searchbar" href="">
+                        <input placeholder="search..." id="searchBar" name="searchBar"
+                        type="text"> 
+                        <img src="Search.png" width="20px" class="glass">
+                    </a>-->
+
+                  <!--  <form class="search-form">
+                        <input type="search" id="search-box" placeholder="Search Here...">
+                        <label for="searc h-box"> <img src="Search icon black .png" width="20px" alt=""></label>
+                    </form>-->
+                    <a class="icon-cart">Cart<span>0</span></a>
+                </div>
+            </div>
+        </header>
+
+
+
+<!--NAVIGATION BOTTOM-->
+        <section class="home">
+            <!--VIDEO-->
+            <div>
+            <img class="video-slide active" src="images/women.jpg" >
+            <img class="video-slide" src="images/prettywoman.jpg" >
+            <img class="video-slide" src="images/melon.jpg" >
+            <img class="video-slide" src="images/women4.jpg" ></div>
+            <!--Words on the Video-->
+            <div class="content active">
+                <h1>PressOn<br><span>Nails</span></h1>
+                <p>Be sure to grab our new re-usable press-on nails in multiple colours and sizes</p>
+                <a href="Nails.html" class="btn">Shop</a>
+            </div>
+
+            <div class="content">
+                <h1>Hair<br><span>Extensions</span></h1>
+                <p>Check Out our brand new hair extensions, re-usable and they come in different styles and colours</p>
+                <a href="#">Shop</a>
+            </div>
+
+            <div class="content">
+                <h1>Hair<br><span>Accessories</span></h1>
+                <p>Check out our headwraps that come in multiple colors, Hair Bonnets, Scrunchies</p>
+                <a href="Nails.html">Shop</a>
+            </div>
+
+            <div class="content">
+                <h1>Hair<br><span>Products</span></h1>
+                <p>Check-out our perfected leave-in conditioner, shea butter, shampoo, Moose and Anti-Itch</p>
+                <a href="#">Shop</a>
+            </div>
+            
+          <div class="media-icons">
+                <a href=""><i><img src="images/facebook2.png"  width="18px" class="Facebook"></i></a>
+                <a href=""><i><img src="images/Instagram.png" width="18px" class="Instagram"></i></a>
+                <a href=""><i><img src="images/twitter.png"   width="18px" class="Twitter"></i></a>
+                <a href=""><i><img src="images/linkedin.png"  width="18px" class="Tiktok"></i></a>
+            </div>
+            
+            <div class="down-arrow">
+                <a href="#trending" class="down"><i><img src="images/Arrow down.png" width="15px"></i></a>
+            </div>
+
+<!--SLIDER BUTTONS-->
+<div class="slider-navigation">
+<div class="nav-btn active"></div>
+<div class="nav-btn"></div>
+<div class="nav-btn"></div>
+<div class="nav-btn"></div>
+
+</div>
+        </section>
+        <script type="text/javascript">
+            //Javascript of responsive navigation menu
+         const  menuBtn = document.querySelector(".menu-btn");
+         const  navigation = document.querySelector(".navigation");
+
+         menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+         });
+
+         //Javascript for video slider navigation
+         const btns = document.querySelectorAll(".nav-btn");
+         const slides = document.querySelectorAll(".video-slide");
+         const contents = document.querySelectorAll(".content");
+         var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+         }
+         btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+         });
+        </script>
+<br><br><br><br>
+
+
+
+<body>  
+<!--CATALOG-->
+<div class="container" id="trending">
+    <div class="center-text">
+        <h2>Best <span>Sellers</span></h2>
+    </div>
+
+    <div class="Catalogue">
+
+        <div class="Cat-Item">
+            <img src="images/Nails1.jpg" alt="">
+            <div class="discount">
+                <h5>15%</h5>
+            </div>
+            <div class="name">
+                <h4>Half Running Set</h4></div>
+            <div class="price">
+                <p>UGX 80,000</p>
+            </div>
+            <div class="addCart">Add to Cart</div> 
+            
+        </div>
+
+    </div><br>
+    
+        
+    
+   <!--CART-->
+    <div class="cartTab">
+        <div class="MyCart">My Cart<!--<img src="images/Pinkshoppingcart.PNG" width="28px">--></div>
+           <div class="listCart">
+                <div class="Cat-Item">
+             <!--<  <div class="image">
+                        <img src="images/Nails1.jpg" alt="">
+                    </div>
+
+                    <div class="name">
+                           NAME
+                    </div>
+
+                    <div class="totalPrice">
+                            $200
+                    </div>
+
+                    <div class="quantity">
+                           <span class="minus">-</span>
+                           <span>1</span>
+                           <span class="plus">+</span>
+                    </div>-->
+        
+        </div></div>
+        
+                      <div class="btn">
+                    <button class="close">CLOSE</button>
+                    <button href="#" class="checkOut">CHECK OUT</button>
+                </div>
+
+        </div>
+</div>
+</div>
+
+
+<!--NEWS UPDATES-->
+<section>
+    <h2 align ="center" class="card-container2">News <span>Update</span></h2>
+<div class="card-container">
+    <div class="card">
+        <img src="images/IMG_3898.JPG">
+        <div class="card-content">
+            <h3>Hot Mess x Baby Pink Collab</h3>
+            <p>We have put Baby Pink and Hot Mess together
+                to create the best, slickest pink presson nails yet
+            </p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+
+        <div class="card">
+            <img src="images/Untitled design.png-1.png">
+            <div class="card-content">
+                <h3>Dirty Mustard x Cream Appeal Collab</h3>
+                <p>Dirty Mustard has never looked better,
+                    we have mixed the Cream Appeal mix to pull
+                    off the most attractive Yellow press-on nails
+                </p>
+                <a href="" class="btn">Read More</a>
+            </div>
+       </div>
+
+            <div class="card">
+                <img src="images/Untitled design.png.png">
+                <div class="card-content">
+                    <h3>Ogal Blue x Sky Blue Collab</h3>
+                    <p>For our blue loving ladies, we've got you covered,
+                        check out the new summer blue press-on nails, mixing Baby Blue x
+                        Ogal Blue was the collab we did not know we needed!
+                    </p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
+            
+        </div>
+</section>
+
+
+<!--CLIENT REVIEWS-->
+<div id="page" class="site">
+    <div class="container2">
+        <div class="testi">
+            <div class="head">
+                <h2>Client <span>Reviews</span></h2>
+                <p>See what people are saying...</p>
+            </div>
+            <div class="body swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="thumbnail">
+                            <img src="images/profile.jpeg" alt=""></div>
+                            <div class = "aside">
+                                <p>I'm glad i got myself the locs extensions before they ran out of stalk because  i can't
+                                    live without them now hahaa
+                                </p>
+                                <div class="name">
+                                    <h4>Alehkya</h4>
+                                    <p>@Aleh_Kay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="thumbnail">
+                            <img src="images/profile6.jpeg" alt=""></div>
+                            <div class = "aside">
+                                <p>The packaging is so good, i didnt expect it all, i love my head scarfs, thank you!
+                                    big 10/10 for me.
+                                </p>
+                                <div class="name">
+                                    <h4>Agnes.R</h4>
+                                    <p>@Blessings45</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="thumbnail">
+                            <img src="images/profile3.jpeg" alt=""></div>
+                            <div class = "aside">
+                                <p>The whole process was so easy, i ordered and recieved on time, amazing work mpwr team.
+                                    when will the boujee-girl press on nails be in stock again?
+                                </p>
+                                <div class="name">
+                                    <h4>Mugerwa Vincent</h4>
+                                    <p>@Vincent_</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="thumbnail">
+                            <img src="images/profile5.jpeg" alt=""></div>
+                            <div class = "aside">
+                                <p>I ordered for the pressOn Nails from the summer category and i am in love with them, 10/10 for me</p>
+                                <div class="name">
+                                    <h4>Genevive Kiconco</h4>
+                                    <p>@GennyK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="thumbnail">
+                            <img src="images/profile4.jpeg" alt=""></div>
+                            <div class = "aside">
+                                <p>Will you guys be doing black friday or any other discounts anytime soon?, i would like to buy in bulk</p>
+                                <div class="name">
+                                    <h4>Alex G</h4>
+                                    <p>@A4Ablex</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                 <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+   </div>    
+</div>
+</section>
+</body>
+
+
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affliliate program</a></li>
+                </ul>
+    </div>
+        <div class="footer-col">
+                 <h4>Get Help</h4>
+                 <ul>
+                    <li><a href="FAQS.html">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+             </div>
+
+            <div class="footer-col">
+                <h4>Online Shop</h4>
+                <ul>
+                    <li><a href="#">Wigs</a></li>
+                    <li><a href="#">Press-on nails</a></li>
+                    <li><a href="#">Hair Accessories</a></li>
+                    <li><a href="#">Merch</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="Forgot Psswrd.html"><i class=""><img src="images/facebook2.png" width="19px" alt="Rockstar Facebook"></a>
+                    <a href="Forgot Psswrd.html"><i class=""><img src="images/twitter.png" width="19px" alt="Rockstar Twitter"></a>
+                    <a href="Forgot Psswrd.html"><i class=""><img src="images/Instagram.png" width="19px" alt="Rockstar Instagram"></a>
+                    <a href="Forgot Psswrd.html"><i class=""><img src="images/linkedin.png" width="19px" alt="Rockstar Linkedin"></a>
+                </ul>	
+        </div>
+    </div>
+</footer>
+<script src="js/java.js"></script>
+<script src="js/MPWRCART.js"></script>
+<script src="js/searchengine.js"></script>
+<script src="js/REVIEWSsliderjs.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  // Optional parame/ters
+  autoHeight: true,
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+})
+</script>
+</div>
+</html>
+
+
+<!--update news section
+<section class="update-news">
+<div class="up-center-text">
+    <h2>News Updates</h2>
+</div>
+<div class="update-cart">
+    <div class="cart">
+        <img src="images/orsrc55852.jpg" width="300px" alt="">
+        <h5>26 jan 2022</h5>
+        <h4>Lets Start bring sale on this summer vacatjkchjdfvnhfvfvergerefvjefvhjefvejfvjev
+            eirihgehrgergrkgerjiehjghjtgtgrtg</h4>
+<h6>Continue Reading..</h6>
+    </div>
+</div>
+
+
+<div class="update-cart">
+<div class="cart">
+    <img src="images/prettywoman.jpg" width="300px" alt="">
+    <h5>26 jan 2022</h5>
+    <h4>Lets Start bring sale on this summer vacatjkchjdfvnhfvfvergerefvjefvhjefvejfvjev
+        eirihgehrgergrkgerjiehjghjtgtgrtg</h4>
+<h6>Continue Reading..</h6>
+</div>
+</div>--->
+
+<!--<section class="client-reviews">
+<div class="reviews">
+    <h3>Client Reviews</h3>
+    <img src="" alt="">
+    <p>tgrr</p>
+
+        <h2>Mark Jevenue</h2>
+        <p>CEO of Addie</p>
+    </p>
+</div>-->

@@ -1,0 +1,7 @@
+@font-face{
+    font-family: LarkeBold;
+    src:url(Larke\ Neue\ Bold.ttf);
+}
+p{
+    font-family: LarkeBold;
+}

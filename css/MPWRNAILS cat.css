@@ -1,0 +1,305 @@
+body{
+    /*scroll-behavior: smooth;*/
+    font-family: Larke;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+
+/*OUR CATALOG*/
+.center-text h2{
+    color: #111;
+    padding: 20PX;
+    text-transform: capitalize;
+    text-align: center;
+    /*break btwn title and catalog*/
+    margin-bottom: 30px;
+}
+
+/*Our Catalog Title Span*/
+.center-text span{
+    color: #E5A484;
+}
+
+/*products alignment*/
+.Catalogue{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 5rem;
+}
+
+.Cat-Item{
+    position: relative;
+    transition: all .01s;
+}
+
+.Cat-Item img{
+    width: 100%;
+    height: auto;
+    transition: all .01s;
+    border-radius: 2%;
+}
+
+.Cat-Item img:hover{
+    transform: scale(1.0);
+}
+
+
+
+/*On Sale, Discount*/
+.discount h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #E5A484;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+/*Product Title*/
+.name h4{
+    color: #111;
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 12px;
+
+}
+
+/*Price*/
+.price p{
+    color: #757575;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/*Add to Cart Button*/
+.addCart{
+    background-color: #353432;
+    color: #eee;
+    padding: 10px 10px;
+    border-radius: 2%;
+    margin-top: 10px;
+    border: none;
+    cursor:pointer;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+
+}
+
+/*Add To Cart Button Hover*/
+.addCart:hover{
+    background-color: #E5A484;
+    color: #fff;
+}
+
+.addCart i {
+    vertical-align: middle;
+}
+
+
+
+
+
+/*CATALOG RESPONSIVE*/
+@media screen and (max-width: 992px) {
+    .Catalogue{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .header{
+        padding: 30px 5%; 
+    }
+}
+@media screen and (max-width: 768px){
+    .Catalogue{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/*
+@media screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+/*NEWS UPDATE RESPONSIVE*/
+@media screen and (max-width: 992px) {
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+  
+
+/*THE SCROLLING BAR*/
+::-webkit-scrollbar {
+    width: 0.6rem;
+    
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: #161616;
+    transition: all 0.1s ease-in-out;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #161616;
+}
+::-webkit-scrollbar-track {
+    background: #353432;
+}
+
+
+
+
+/* CLIENT REVIEWS
+.client-reviews{
+    background-color: #edf1ef
+    ;
+}
+.reviews{
+    text-align:center;
+}
+
+.reviews h3{
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+
+.reviews img{
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+    .reviews p{
+color: #707070;
+font-size: 16px;
+font-weight:100;
+    line-height: 25px;
+    margin-bottom: 10px; 
+}
+
+.reviews h2{
+    font-size: 22px;
+    color: #000;
+    font-weight:400;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+*/
+
+/*Background Picture
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(women.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+*/
+
+/*Winter Collection
+.main-text h5{
+    color: #e58484;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+/*New Winter Collection word
+.main-text h1{
+    color: #f50a0a;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.main-text p{
+    color: #a5a5a5;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+*/
+
+
+
+    /* old button css
+    display: flex;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    /*box-shadow: 2px #000000;*/
+    /*border: 1px solid #b6b6b6;
+    padding: 10px 90px;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-top: 17px;
+    margin-bottom: 30px;
+    background-color: #E5A484;
+    transit
+    
+
+    /*
+.heart-icon{
+    max-width: 30px;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+
+.heart-icon:hover{
+    color: #E5A484;
+}
+
+
+.ratting{
+   max-width: 20px;
+
+}
+.ratting i{
+    color: orange;
+    font-size: 18px;
+    max-width: 30px;
+}*/
+
